@@ -6,7 +6,7 @@ Je vrienden hebben er inmiddels lucht van gekregen dat je kunt programmeren en s
 verzoekjes om webapplicaties te bouwen. Je vriend Constantijn wil heel graag dat je een applicatie voor hem maakt die
 feitjes over landen kan ophalen, zodat hij cool kan doen met zijn wereldse kennis op borrels en verjaardagen.
 
-![screenshot page](./src/assets/screenshot.png)
+![screenshot page](assets/screenshot.png)
 
 Je gaat dit doen met behulp van de REST Counties API. De documentatie over de verschillende endpoints kun
 je [hier](https://restcountries.com/#api-endpoints-v2-all) vinden. Bekijk deze documentatie goed. _Let op:_ we raden je

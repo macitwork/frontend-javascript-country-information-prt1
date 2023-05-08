@@ -1,136 +1,246 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
-/*-----------------Table of Contents:-----------------*/
-/*        1. Global Styles
-          2. Reusables
-          3. Typografie
-          4.Header
-          5.main
-          5.1 Contact-Form  Contactformulier
-          6. Footer
-/*-------------------------------------------------*/
-/* 1. Global Styles*/
-/*-------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Lato:ital,wght@0,300;0,400;1,900&display=swap');
+/*===================================================*
+		Table of Contents
+		  1. Global Styles
+		  2. Typography
+		  3. Layout
+			  3.1 Reusables
+			  3.2 Specific
+		  4. Areas
+			  4.1 Header
+				  4.1.1 Navigation Bar
+
+			  4.2 Main
+			  4.3 Footer
+				  4.3.1 Form
+		  5. Media Queries
 
 
-/*---For the padding not to affect the width of the element-----*/
+	  /* ========================== 1. Global Styles ==================================*/
 body * {
+
 	box-sizing: border-box;
+	background: #2f3333;
 }
 
 body {
 	display: flex;
 	flex-direction: column;
-	background-color: var(--white);
 	width: 100%;
 
 
 }
+/* ======================== 2. Typography ============================ */
 
-ul {
-	font-family: roboto, sans-serif;
-	display: flex;
-	flex-direction: row;
-	list-style-type: none;
-
-}
-
-a:link {
-	font-family: roboto, sans-serif;
-	text-decoration: none;
-	color: var(--blue);
-
+h1  {
+	font-family: "Comic Sans MS", sans-serif;
+	font-size: 100px;
+	font-style: normal;
+	font-weight: bolder;
+	color: #f1f5f3;
 
 }
 
-li {
-	font-family: roboto, sans-serif;
+h2 {
+	font-family: 'lato', sans-serif;
+	font-weight: bolder;
+	font-style:normal;
+	color: #f1f5f3;
+}
+h3{
+	font-family: 'lato', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	color: #f1f5f3;
+}
+h4 {
+	font-family: 'lato', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	color: #f1f5f3;
+}
+h5, h6 {
+	font-family: 'lato', sans-serif;
+	font-style: normal;
+	font-weight: bolder;
+	color: #f1f5f3;
+
 }
 
-li:hover {
-	text-decoration-line: line-through;
-}
+p {
+	font-family: 'lato', sans-serif;
+	font-weight: bold;
+	color: #f1f5f3;
 
-/* --------------- 2-Reusables ----------------------- */
+}
+/* ====================== 3. Layout ================== */
+/* ---------------------- 3.1 Reusables ----------------------- */
 
 :root {
 
 
 	--purple: #5722CD; /**Chrysler Blue*/
-	--blue: #4845E8; /**Majorelle Blue*/
+	--blue: #4845E8; /**Majelle Blue*/
+	--lightgreen: #1c9b09; /*Caterpillar Green*/
+	--darkgreen: #13502a; /* Broccoli*/
+	--yellow: #ceae11; /*Sun flower*/
 	--pink: #ED4385; /**French Rose*/
-	--black: #0C0C0C; /* - Zwart - Night (voor standaard tekst)-*/
-	--white: #f1f5f3; /*-- Magnolia (voor de grote zwevende woorden, zoals "hello" en "services")--*/
-	--silver: #7A7A7A; /*(voor de service-tegel tekst)*/
-	--light-silver: #F3f0FF /*HELLO, SERVISEC (BONOS)*/
+	--black: #0C0C0C; /* - Zwart - Night */
+	--white: #f1f5f3; /*-- Magnolia --*/
+	--silver: #7A7A7A; /* Silver*/
 
 }
+/* ---------------------- 3.2 Specific ------------------------ */
 
-/*--------------------------------*/
-/*         3. Typografie           */
-/*--------------------------------*/
+/* ------------------------------- 4. Areas ---------------------------------------- */
 
-h1 {
-	font-weight: 600;
-	font-style: normal;
-	font-size: 48px;
-	color: var(--white);
+.blue {
+	color: #4845E8;
+}
+
+.darkgreen{
+	color: #468f61;
+}
+.lightgreen{
+	color: #1c9b09;
+}
+.red{
+	color: #da1313;
+}
+.yellow{
+	color: #ceae11;
+}
+.purple{
+	color: #5722CD;
+}
+
+.white{
+	color: azure;
+}
+/* ---------------------- 4.1 Header -------------------------- */
+
+
+.innerContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: baseline;
 	text-align: center;
-	font-family: Merriweather, sans-serif;
+	margin: 1rem;
+	flex : 1 1 1200px;
 }
 
-h2 {
-	font-weight: 700;
-	font-style: normal;
-	font-size: 20px;
-	font-family: Merriweather, sans-serif;
-}
-
-h3 {
-
-	font-weight: 700;
-	padding: 1px;
-	font-size: 18px;
-	font-family: Merriweather, sans-serif;
-}
-
-h4 {
-	color: var(--white);
-	font-weight: 200;
-	padding: 3px;
-	font-size: 20px;
-	font-style: normal;
-	font-family: Merriweather, sans-serif;
-}
-
-h5 {
-	font-weight: 400;
-	font-size: 14px;
-	font-family: Merriweather, sans-serif;
-}
-
-h6 {
-	font-weight: 100;
-	font-style: normal;
-	font-size: 12px;
-	color: var(--silver);
-	font-family: Merriweather, sans-serif;
-
+.outer-container{
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
 
 }
 
-p {
-	color: var(--black);
-	font-weight: 100;
-	font-size: 10px;
-	font-family: roboto, sans-serif;
 
+/* ---------------------- 4.2 Main ---------------------------- */
+.countries{
+	column-count: 3;
+	column-width: 24rem;
+}
+#countries-ul{
+
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	flex-direction: row;
+	padding: 20px;
+	justify-content: center;
+	justify-items: auto;
+	box-shadow: 0 16px 16px 0 rgba(0, 0, 0, .1);
+	align-items: flex-start;
+	align-content: flex-start;
 }
 
-a {
-	color: var(--blue);
-	font-weight: 300;
-	font-size: 10px;
-	font-family: roboto, sans-serif;
+.button{
+	display: flex;
+	flex-direction: row;
+	padding: 20px;
+	justify-content: center;
+	justify-items: auto;
+}
 
+
+#sort-name
+{
+	background-color:green;
+	color: white;
+	width: 200px;
+	height: 48px;
+	margin: 18px;
+	border-radius: 24px;
+	border-color: green;
+	border: 0;
+
+}
+#sort-name:hover {
+
+	width: 200px;
+	height: 46px;
+	margin: 18px;
+	border-radius: 24px;
+	align-self: center;
+	background-color: white;
+	color: black;
+	text-decoration-color: black;
+}
+#sort-population
+{
+	background-color:green;
+	color: white;
+	width: 200px;
+	height: 48px;
+	margin: 18px;
+	border-radius: 24px;
+	border-color: green;
+	border: 0;
+}
+#sort-population:hover {
+
+	width: 200px;
+	height: 46px;
+	margin: 18px;
+	border-radius: 24px;
+	align-self: center;
+	background-color: white;
+	color: black;
+	text-decoration-color: black;
+}
+#sort-region{background-color:green;
+
+	color: white;
+	width: 200px;
+	height: 48px;
+	margin: 18px;
+	border-radius: 24px;
+	border-color: green;
+	border: 0;
+}
+#sort-region:hover {
+
+	width: 200px;
+	height: 46px;
+	margin: 18px;
+	border-radius: 24px;
+	align-self: center;
+	background-color: white;
+	color: black;
+	text-decoration-color: black;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* ---------------------- 4.3 Footer -------------------------- */
+footer {
+	background-color: transparent;
+	color: white;
+	padding: 1rem;
 }
